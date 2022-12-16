@@ -1,5 +1,7 @@
 # Hosting a Full-Stack Application
 
+![fwd-host-full-stack](https://circleci.com/gh/safwat-fathi/fwd-host-full-stack.svg?style=svg)
+
 ### **You can use you own project completed in previous courses or use the provided Udagram app for completing this final project.**
 
 ---
