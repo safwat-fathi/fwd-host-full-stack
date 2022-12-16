@@ -10,6 +10,7 @@
         "api:install": "cd server && npm install",
         "api:build": "cd server && npm run build",
         "api:start": "cd server && npm run start",
+        "api:test": "cd server && npm run test",
         "api:deploy": "cd server && npm run deploy",
         "deploy": "npm run api:deploy && npm run frontend:deploy"
     }
