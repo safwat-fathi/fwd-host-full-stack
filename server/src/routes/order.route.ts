@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { show } from "../controllers/order.controllers";
+import { showCurrent } from "../controllers/order.controllers";
 import { verifyToken } from "../middlewares/auth.middlewares";
 
 const orders = Router();
 
-orders.get("/:userId", verifyToken, show);
+orders.get("/current", verifyToken, showCurrent);
 
 export default orders;

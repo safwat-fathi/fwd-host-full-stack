@@ -46,7 +46,7 @@ export class UserStore {
 
       return user;
     } catch (err) {
-      throw new Error(`Could not create user: ${err}`);
+      throw new Error(`Could not show user: ${err}`);
     }
   }
 
@@ -78,7 +78,7 @@ export class UserStore {
     try {
       const connect = await Client.connect();
 
-      const sql = "SELECT password FROM users WHERE firstName=($1)";
+      const sql = "SELECT * FROM users WHERE firstName=($1)";
 
       const result = await connect.query(sql, [fName]);
 

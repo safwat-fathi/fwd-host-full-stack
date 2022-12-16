@@ -20,9 +20,9 @@ export const verifyToken = async (
   try {
     const tokenDecoded = decodeToken(token);
 
-    req.body.userId = tokenDecoded.user.id;
+    req.body.user_id = tokenDecoded.id;
     next();
   } catch (err) {
-    throw new Error(`${err}`);
+    return res.status(500).json({ message: `${err}` });
   }
 };
