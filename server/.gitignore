@@ -1,4 +1,8 @@
 /node_modules
 /dist
 .env
-# /thunder-tests
+/thunder-tests
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
