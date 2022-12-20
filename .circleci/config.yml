@@ -70,14 +70,14 @@ workflows:
   fwd-host-full-stack:
     jobs:
       - build
-      # - hold:
-      #     filters:
-      #       branches:
-      #         only:
-      #           - main
-      #     type: approval
-      #     requires:
-      #       - build
-      # - deploy:
-      #     requires:
-      #       - hold
+      - hold:
+          filters:
+            branches:
+              only:
+                - main
+          type: approval
+          requires:
+            - build
+      - deploy:
+          requires:
+            - hold
