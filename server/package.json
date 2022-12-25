@@ -7,7 +7,7 @@
     "start": "ts-node-dev --respawn --rs src/server.ts",
     "test": "ENV=test node_modules/db-migrate/bin/db-migrate --env test up && jasmine-ts && node_modules/db-migrate/bin/db-migrate db:drop test",
     "build": "tsc",
-		"deploy": "eb init $EB_APP --region $AWS_DEFAULT_REGION --platform $EB_PLATFORM && eb use $EB_APP && eb deploy $EB_ENV"
+		"deploy": "eb use develop && eb deploy develop"
   },
   "author": "Safwat Fathi",
   "license": "ISC",
