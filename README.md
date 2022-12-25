@@ -27,6 +27,6 @@ Unit tests are using the Jasmine Framework.
 
 ### Links
 
-[Front-End S3 link](https://fwd-full-stack-client.s3.us-west-2.amazonaws.com/index.html)
+[Front-End s3 link](https://fwd-full-stack-client.s3.us-west-2.amazonaws.com/index.html)
 [Back-End Elasticbeanstalk link](develop.eba-7k5tfh3w.us-west-2.elasticbeanstalk.com/api)
 
