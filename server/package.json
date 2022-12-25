@@ -7,7 +7,7 @@
     "start": "ts-node-dev --respawn --rs src/server.ts",
     "test": "ENV=test node_modules/db-migrate/bin/db-migrate --env test up && jasmine-ts && node_modules/db-migrate/bin/db-migrate db:drop test",
     "build": "tsc",
-		"deploy": "eb use develop && eb deploy develop"
+		"deploy": "eb init fwd_api --region us-west-2 --platform node.js-16 && eb use fwd_api && eb deploy develop"
   },
   "author": "Safwat Fathi",
   "license": "ISC",
