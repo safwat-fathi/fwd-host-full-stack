@@ -60,8 +60,7 @@ jobs:
     steps:
       - node/install:
           node-version: '16.0.0' 
-      - eb/setup:
-          profile-name: default
+      - eb/setup
       - aws-cli/setup
       - checkout
       - attach_workspace:
