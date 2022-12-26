@@ -7,7 +7,7 @@
     "start": "ts-node-dev --respawn --rs src/server.ts",
     "test": "ENV=test node_modules/db-migrate/bin/db-migrate --env test up && jasmine-ts && node_modules/db-migrate/bin/db-migrate db:drop test",
     "build": "tsc",
-		"deploy": "eb deploy --profile default"
+		"deploy": "eb deploy"
   },
   "author": "Safwat Fathi",
   "license": "ISC",

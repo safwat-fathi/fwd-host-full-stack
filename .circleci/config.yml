@@ -48,6 +48,10 @@ jobs:
           command: |
             echo "Build the backend API"
             npm run api:build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -59,6 +63,10 @@ jobs:
       - eb/setup
       - aws-cli/setup
       - checkout
+      - attach_workspace:
+          at: .
+      - aws-cli/setup:
+          profile-name: default
       - run:
           name: Deploy App
           # Install, build, deploy in both apps
