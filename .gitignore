@@ -4,8 +4,8 @@
 /server/.env
 /server/.elasticbeanstalk/*
 /server/.ebextensions/*
-# /server/!.elasticbeanstalk/*.cfg.yml
-# /server/!.elasticbeanstalk/*.global.yml
+!/server/.elasticbeanstalk/config.yml
+!/server/.elasticbeanstalk/global.yml
 
 # CLIENT DIR
 /client/node_modules
